@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css 속성 기초</title>
+	<style>
+		/* reset */
+		*{
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+			color: #222;
+			font-size: 15px;
+			box-sizing: border-box;
+		}
+		html,body{
+			/* height: 100%; */
+		}
+		#boxWrap{
+
+		}
+		.boxwrap{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 500px;
+			height: 500px;
+			margin: auto;
+			border: 1px solid black;
+			/* border-radius: 50%; */
+			border-radius: 0 100px 0 100px;
+		}
+		.boxwrap div{
+			/*position: static; > 기본*/
+			/*position: relative; > 상대값, 기준은 본인*/
+			/*position: absolute; > 절대값, 기준은 부모*/
+			/*position: fixed; > 고정값, 무조건 기준은 body*/
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: aqua;
+		}
+		.boxwrap .box1{
+			top: 40px;
+			background-color: antiquewhite;
+		}
+		.boxwrap .box2{
+			top: 40px;
+			right: 0;
+			background-color: salmon;
+		}
+		.boxwrap .box3{
+			/* contents box 정가운데 정렬하는 방법1 (사이즈 지정) */
+			/* top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -50px; */
+
+			/* contents box 정가운데 정렬하는 방법2 (사이즈 지정) */
+			/* top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto; */
+
+			/* contents box 정가운데 정렬하는 방법3 (크기에 맞춰 늘고 줆) */
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			background-color: brown;
+		}
+		.boxwrap .box4{
+			bottom: 0;
+			right: 0;
+			background-color: rosybrown;
+		}
+		.boxwrap .box5{
+			bottom: 100px;
+			left: 0;
+			background-color: forestgreen;
+		}
+	</style>
+</head>
+<body>
+	<div id="boxWrap" class="boxwrap">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+	</div>
+	<!--
+	overflow
+	visibillity
+	display
+
+	position
+	top
+	right
+	bottom
+	left
+	z-index
+
+	float > left, right만 있음
+	clear
+
+	width
+	height
+	margin > 시계방향
+	margin:0; > 상하좌우 다 선택됨
+	margin:0 auto; > 상하 좌우
+	margin:0 auto 0;
+	margin:0 auto 0 auto; > 좌측상단 우측상단 우측하단 좌측하단
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-letf:0;
+
+	padding
+	padding:0;
+	padding:0 0;
+	padding:0 0 0;
+	padding:0 0 0 0;
+	padding-top:0;
+	padding-right:0;
+	padding-bottom:0;
+	padding-left:0;
+
+	border
+	border-top:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+	border-style:solid(선), dotted(점선), dashed(실선);
+	border-width
+	border-color:black;
+	border-top-color:blue;
+
+	color값 지정하는 방식 - black, #000000, #000, rgb(0,0,0), rgba(0,0,0,0.1)투명도
+
+
+	border-radius > 보더 없이 라운드 처리
+
+	background
+	color
+	font-size
+	font-family
+	font-weight
+
+	box-shadow
+	text-shadow
+
+	box_sizing:border-box
+
+	transform
+	cursor:pointer > 기본으로 손모양 나옴
+	-->
+</body>
+</html>

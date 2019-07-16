@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css 속성 알아보기</title>
+</head>
+<body>
+	<!--
+
+	css 속성
+
+	overflow - 박스 크기에 콘텐츠 내용이 넘칠 경우 제어 함 (스크롤) > overflow:auto/scroll/hidden;
+																																overflow-x/y:auto;
+
+	visibility
+	display - 보이는 것도 컨트롤 가능. 블럭화 시킬건지, 인라인화 시킬건지 제어 가능
+
+	position - static, relative(상대값. 본인이기준이 되어서 움직임),
+						 absolute(절대값. 부모 기준에 따라서 움직임. 부모의 position속성이 있느냐 없느냐에 따라 위치값이 달라짐), fixed(고정값. 무조건 부모는 body기준으로 고정됨)
+	top
+	right
+	bottom
+	left
+	z-index
+
+	float
+	clear
+
+	width - 가로 크기
+	height - 세로 크키
+	margin - 바깥 여백
+	padding - 안 쪽 여백
+	border - 테두리
+
+	background
+	color
+	font-size
+	font-weight
+	font-family
+	font-transform
+
+	text-decoration
+	box-shadow
+	text-shadow
+	transform
+
+	box-sizing
+
+	-->
+	<div class="overbox">
+			월트 디즈니는 애니메이션을 문화적 상품이자 작품으로 만들어낸 인물이다. 뿐만 아니라 미키마우스, 도날드 덕 등 다수의 애니메이션 캐릭터를 개발하면서 20세기 이후, 캐릭터 산업이라는 새로운 사업 영역을 개척한 장본인이기도 하다. 그는 1955년에는 그 누구도 상상 못한 거대 규모의 테마 파크 ‘디즈니랜드’를 건설하면서 어린이들이 상상하고 꿈꾸던 것이 눈앞에서 현실화되는 경험을 할 수 있도록 했다.
+
+			월트 디즈니가 없었다면, 현재 우리가 보는 애니메이션이 있었을까? 물론 월트 디즈니가 애니메이션을 개발하고 제작할 당시 다른 사람들도 20세기 초 새롭게 발달한 기술에 힘입어 애니메이션을 만들고 작은 성공을 이루기도 하였다. 그러나 애니메이션의 처음과 현재를 이야기 할 때 월트 디즈니의 업적을 빼고는 이야기 할 수 없다. 아니 그 보다 더 나아가 월트 디즈니가 현재 우리가 보는 애니메이션의 기준을 세웠다고 해야 할지도 모르겠다.
+			월트 디즈니가 없었다면 아마도 현재 우리가 보고 있는 애니메이션과는 전혀 다른 그 무엇을 보고 있을지도 모른다. 이렇듯 월트 디즈니는 애니메이션을 개발하고 대중에게 알리고 이를 문화 상품, 나아가 작품으로 승화 시켰다. 그를 애니메이션의 대명사라고 해도 과언은 아니다.
+			
+			그러나 실제 월트 디즈니의 작품에 대한 기여도에 대해서는 오랫동안 여러 가지 말이 많았었다. 일단 공전의 히트를 치고 현재까지도 세계적으로 가장 유명한 캐릭터인 미키마우스만 해도 그렇다. 미키마우스를 실제로 그린 사람은 디즈니의 친구이자 동업자였고 많은 갈등 속에서 결별과 재회를 거듭했던 어브 아이웍스였다. 디즈니가 아이웍스에게 아이디어를 제공했다고는 하지만 실제로 그림을 그린 사람은 아이웍스였다. 이외에도 디즈니의 대표적 작품 속의 캐릭터들은 디즈니 자신의 작품이라기 보다는 그의 구상과 계획에 의해 다른 누군가의 손에서 만들어진 것들이었다. 흔히들 ‘월트 디즈니’의 작품 속 캐릭터들은 모두 월트 디즈니가 그린 줄 알지만 실상 디즈니는 현장의 창작자라기보다는 연출자, 제작자, 나아가 경영자이자 사업가로서 ‘월트 디즈니’라는 회사를 이끈 사람이었다.
+			
+			힘들었던 어린시절
+			월트 디즈니는 20세기가 막 발을 떼기 시작한 1901년 미국 시카고에서 태어났다. 그는 여러 직업을 전전했던 아버지 탓에 이사를 거듭하며 미국의 각지에서 살았다. 디즈니가 4살이었을 무렵 그의 부모는 도시 생활을 청산하고 미주리 주 마셀린이라는 농촌으로 이주하였다. 시골에서 어린 시절을 보낸 디즈니는 이 시절을 자신의 생애 중 가장 아름다운 시기로 추억하였고 그의 작품 속에 녹아 있는 목가적인 풍경들도 모두 이 시기의 경험과 그리움 속에서 나온 것이라고 한다. 이때부터 디즈니는 그림 그리기에 재능을 발휘했는데 완고하고 냉혹했던 아버지는 막내 아들의 재능을 그리 달가워하지 않았다고 한다. 대신 옆집에 살던 은퇴한 의사가 그의 그림을 액자에 넣어 걸어두고 볼만큼 그 재능을 높이 사주었다. 월트 디즈니의 형이자 동업자였던 로이 디즈니의 증언에 의하면 이 의사의 격려가 월트 디즈니의 인생에서 최초로 느낀 기쁨이었다고 한다.
+			
+			그러나 월트 디즈니의 시골생활은 그리 오래 가지 못했다. 시골에서 잘 적응하지 못했던 그의 아버지는 다시 캔자스의 도시로 나와 신문 판매업을 시작했다. 디즈니의 아버지는 상당히 엄격한 사람이었고 자식들에게 냉정했으며 그들과 갈등했다. 도시로 나올 당시 월트 디즈니의 두 큰형은 이미 아버지와 다투고 집을 나간 상태였기 때문에 아버지의 신문 판매업은 월트 디즈니와 그의 형 로이 디즈니의 노동력을 바탕으로 이루어졌다. 월트 디즈니는 어린 시절부터 아버지에게 용돈 한 푼 받지 못한 채 비가 오나 눈이 오나 아침 저녁으로 정확한 시간에 신문을 배달해야만 했다. 이때의 쓰라린 기억으로 월트 디즈니는 평생 아버지와 소원했고, 어린이들이 따뜻함과 편안함 속에서 행복감을 느낄 수 있는 세계를 늘 꿈꾸었다고 한다. 그 결과가 훗날 그가 건설한 디즈니랜드였다.
+			
+			집안일을 돕느라 학업을 제대로 이어갈 수 없었던 디즈니는 어렵사리 아버지의 마지못한 허락을 받아 중등 과정을 가르치는 캔자스시 예술 디자인 학교에 입학해 체계적인 이론과 실기 교육을 받았다. 1917년 디즈니 가족은 다시 시카고로 이주했고 월트 디즈니는 고등학교에 입학했지만 학교 성적은 그다지 좋지 못했다. 학교 신문에 삽화 등을 그리며 청소년기를 보내던 월트 디즈니는 1차대전 발발과 동시에 학교를 그만두고 군대에 자원 입대하려고 하였는데 이것은 하루라도 빨리 아버지로부터 벗어나기 위한 시도였다. 그러나 16살 월트 디즈니는 군인으로서는 나이가 미달이었고 결국 미국 적십자(American Red Cross)사 트럭 요원으로 입대해 프랑스와 독일 전선에서 복무하였다. 1년간 유럽에서 지낸 월트 디즈니는 캔자스로 돌아왔지만 아버지에게 돌아가지는 않았다. 그는 상업 광고를 제작하는 회사의 도안사로 사회 생활을 시작하면서 애니메이션의 세계에 눈을 뜨게 된다.
+	</div>
+	<div class="visibox">
+		하단에 위치한 박스
+	</div>
+	<style>
+		div{
+			/*overflow: hidden;*/
+			/*overflow: auto;
+			display:inline-block;
+			width:250px;
+			height:250px;
+			padding:10px;
+			border:1px solid black;
+			box-sizing:border-box;*/
+		}
+		.overbox{
+			/*visibility:visivle;
+			visibility:hidden;*/
+			/*display:none;*/
+			/*display:block;*/
+			/*display:inline;*/
+			display:none;
+			
+		}
+		.visibox{
+			display:none;
+		}
+		
+		.posbox{
+			width:500px;
+			height:500px;
+			border:1px solid #000;
+			box-sizing:border-box;
+		}
+		.posbox div{
+			position:absolute;
+			top:50%;
+			left:50%;
+			width:200px;
+			height:200px;
+			background-color: aqua;
+			box-sizing:border-box;
+		}
+		.posbox .box1{
+			background-color:red;
+			/*top:0;
+			left:0;*/
+			margin-top: -200px;
+			margin-left: -200px;
+		}
+		.posbox .box2{
+			background-color:orangered;
+			/*top:0;
+			right:0;*/
+			margin-top: -200px;
+			margin-left: 0;
+		}
+		.posbox .box3{
+			background-color:yellow;
+			/*top:50%;
+			left:50%;*/
+			margin-top:0;
+			margin-left:-200px;
+		}
+		.posbox .box4{
+			background-color:green;
+			/*right:0;
+			bottom:0;*/
+			margin-top: 0;
+			margin-left: 0;
+		}
+		.posbox .box5{
+			background-color:blue;
+			/*bottom:0;
+			left:0;*/
+		}
+	</style>
+
+	<div class="posbox">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+		<div class="box4">4</div>
+		<div class="box5">5</div>
+	</div>
+
+</body>
+</html>

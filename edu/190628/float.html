@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>float</title>
+	<style>
+		/* Reset */
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		box-sizing: border-box;
+	}
+	/* Layout */
+	.wrap{
+		min-width: 800px;
+	}
+	body{
+		background-color: gray;
+	}
+	.clear{
+		clear: both;
+	}
+	.clear::after{
+		content: "";
+		clear: both;
+		display: block;	
+	}
+	.header{
+		min-height: 80px;
+		background-color: blanchedalmond;
+	}
+	.main{
+		padding: 10px;
+		background-color: rgb(23, 23, 51);
+	}
+	/* .main::after{
+		content: "";
+		clear: both;
+		display: block;	
+	} */
+	.sidemenu{
+		float: left;
+		min-width: 200px;
+		max-width: 200px;
+		min-height: 500px;
+		margin-right: -100%; 
+		background-color: rgb(173, 173, 173);
+	}
+	.csection{
+		position: relative;
+		margin-left: 220px;
+		min-height: 800px;
+		background-color: white;
+	}
+	.footer{
+		min-height: 80px;
+		background-color: burlywood;
+	}
+	/* csection > sns */
+	.sns{
+		position: absolute;
+		top: 50px;
+		right: 20px;
+	}
+	.sns li{
+		display: inline-block;
+		float: left;
+		border: 1px solid;
+	}
+	</style>
+</head>
+<!--//.header-->
+<body>
+	<div class="wrap"></header>
+		<header class="header">
+		<main class="main clear">
+			<section class="sidemenu">
+				
+			</section>
+			<!--//.sidemenu-->
+			<section class="csection">
+				<ul class="sns">
+					<il><a href="#">트위터</a></il>
+					<il><a href="#">인스타</a></il>
+					<il><a href="#">페이스북</a></il>
+				</ul>
+			</section>
+			<!--//.csection-->
+		</main>
+		<!--//.main-->
+		<footer class="footer">
+
+		</footer>
+		<!--//.footer-->
+	</div>
+	<!--//.wrap-->
+</body>
+</html>
+
+
+<!-- 
+http://921430km.com/_temp/
+https://www.favicon.cc/
+http://ko.learnlayout.com/
+http://apps.eky.hk/css-triangle-generator/
+https://medium.com/ > 전세계 사이트
+https://ko-kr.facebook.com/groups/uidesignLab/
+http://graphicnovel-hybrid4.peugeot.com/start.html
+http://uxcss.com/edu/selector.html
+-->
+
+
+원하는 레이아웃 만들기

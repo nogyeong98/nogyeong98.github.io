@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>form 요소</title>
+</head>
+<body>
+<!--
+form
+fieldset - 감싸는 역할
+legend - 제목
+
+input - 검색창 같은 것
+select(ul) - 지역, 제목 등 선택하는 부분
+option(li)
+textarea - 부가 정보 입력, 댓글 입력 등 텍스트 적는 부분
+
+infut type 속성
+text
+password
+checkbox
+radio
+hidden - 개발자들이 많이 씀
+botton
+submit
+reset
+imag
+label
+
+search
+url
+date
+week
+year
+month
+email
+telephone
+> 거의 사용하지 않음
+
+get post
+
+readonly
+disabled
+-->
+<form method="post" action="https://www.naver.com">
+	<fieldset>
+	<legend>폼요소 제목</legend>
+	<input type="text" name="" placeholder="아이디" value="">
+	<input type="password" name="" placeholder="패스워드" value="">
+	<input type="checkbox" name="" id="check1"><label for="check1">html</label>
+	<input type="checkbox" name="" id="check2"><label for="check2">css</label>
+	<input type="radio" name="rad" id="rad1"><label for="rad1">html</label>
+	<input type="radio" name="rad" id="rad2"><label for="rad2">css</label>
+
+	<label>
+		<input type="checkbox" name=""><span>html</span>
+	</label>
+	<label>
+		<input type="checkbox" name=""><span>css</span>
+	</label>
+	<label>
+		<input type="radio" name="rad"><span>html</span>
+	</label>
+	<label>
+		<input type="radio" name="rad"><span>css</span>
+	</label>
+
+	<input type="button" value="확인" class="btn btn-confirm">
+	<input type="submit" value="전송" class="btn btn-submit">
+	<input type="image" src="" alt="확인" class="btn btn-confirm">
+	<input type="reset" value="초기화" class="btn btn-reset>"
+	<input type="hidden" value="전송" class="btn">
+	<!-- lable로 안 묶음 -->
+
+	<button class="btn">전송</button>
+	<a href="#" class="btn btn-submit">전송</a>
+
+	<label>
+		<select>
+			<option>선택</option>
+			<option selected>010</option>
+		</select>
+	</label>
+	<label>
+		<select>
+			<option>선택</option>
+			<optgroup label="서울특별시">
+				<option>서초구</option>
+				<option>관악구</option>
+				<option>구로구</option>
+			</optgroup>
+			<optgroup label="부산광역시">
+				<option>해운대구</option>
+				<option>관악구</option>
+				<option>구로구</option>
+			</optgroup>
+		</select>
+	</label>
+	<label>
+		<textarea cols="75" rows="7" placeholder="내용을 입력하세요."></textarea>
+	</label>
+	<label>
+		<input type="email" name="">
+	</label>
+	<label>
+		<input type="search" name="">
+	</label>
+	<label>
+		<input type="url" name="">
+	</label>
+	<label>
+		<input type="date" name="">
+	</label>
+	<label>
+		<input type="year" name="">
+	</label>
+	<label>
+		<input type="week" name="">
+	</label>
+	<label>
+		<input type="month" name="">
+	</label>
+	<label>
+		<input type="telephone" name="">
+	</label>
+</fieldset>
+
+	<!--
+	radio는 name값을 줘야 함
+	form으로 디자인 요소 만들기X
+	-->
+</form>
+</body>
+</html>
