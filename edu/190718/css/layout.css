@@ -1,0 +1,188 @@
+/* navigation */
+.navigation{
+ background-color: #222;
+}
+.nav{
+	width: 1000px;
+	margin: 0 auto;
+}
+.gnb{
+
+}
+.gnb::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+/* nav > depth1 */
+.gnb .dep1{
+	position: relative;
+	float: left;
+	width: calc(100% / 5);
+	text-align: center;
+}
+.gnb .dep1 > a{
+	display: inline;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #222;
+	color: #fff;
+}
+/* nav > depth2 */
+.gnb .dep2{
+	position: absolute;
+	top: -150px;
+	width: 100%;
+	/*display: none;
+	*/background-color: rgba(0,0,0,.5);
+	text-align: left;
+	/*효과주기방법*/overflow: hidden;
+	/* height: 0; */
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+.gnb .dep2 > li{
+	padding: 5px 0;
+	line-height: 20px;
+}
+.gnb .dep2 > li > a{
+	display: block;
+	padding: 0 5px;
+	color: #fff;
+}
+/* nav > depth1 hover */
+.gnb .dep1:hover{
+	
+}
+.gnb .dep1:hover > a{
+	background-color: #fff;
+	color: #222;
+}
+/* nav > depth1 hover시 depth2 stlye */
+.gnb .dep1:hover .dep2{
+	/* display: block; */
+	/* height: 100px;  */
+	top: 40px;
+	background-color: rgba(0,0,0,1);
+}
+.gnb .dep1:hover .dep2 > li{
+
+}
+.gnb .dep1:hover .dep2 > li > a{
+
+}
+.gnb .dep2 > li > a:hover{
+	background-color: rgba(255,255,255,.5);
+	color: #222;
+}
+/* nav > depth1 활성화 */
+.gnb .dep1.on > a{
+
+}
+/* 세로 구조의 navigation */
+.navigation.vertical{
+	background-color: #fff;
+}
+.navigation.vertical .nav{
+	position: relative;
+	width: 300px;
+	margin: 0;
+}
+/* nav > depth1 */
+.navigation.vertical .gnb .dep1{
+	position: static;
+	float: none;
+	width: 100%;
+}
+/* nav > depth2 */
+.navigation.vertical .gnb .dep2{
+	display: none;
+	top: 0;
+	left: 300px;
+	width: 100%;
+	height: 200px;
+}
+/* nav > depth1 hover시 depth2 stlye */
+.navigation.vertical .gnb .dep1:hover .dep2{
+	display: block;
+	top: 0;
+	left: 300px;
+}
+
+
+
+
+/* 레이어 스타일 */
+.lywrap{
+	/*display: none;
+	*/overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	width: 0;
+	height: 0;
+	background-color: rgba(0,0,0,.5);
+	transform: translate(-50%,-50%);
+	transition: all 1s;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+.lywrap:target{
+	/* display: block; */
+	width: 100%;
+	height: 100%;
+}
+.lycnt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 1px solid #222;
+	background-color: #fff;
+	box-shadow: 0 0 5px #fff;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+.lycnt h2{
+
+}
+.lycnt .lyhead{
+
+}
+.lycnt .lybody{
+
+}
+.lycnt .lyfoot{
+
+}
+.lycnt table{
+	 max-width: 700px;
+}
+.lycnt th,td{
+	padding: 8px 10px;
+	border: 1px solid	#ddd;
+}
+.lycnt td{
+	text-align: center;
+}
+.lycnt .btn-lyclose{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/* http://921430km.com/_temp/ */
