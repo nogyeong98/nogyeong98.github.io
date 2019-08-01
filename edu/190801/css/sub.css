@@ -171,3 +171,26 @@
 .tabcnt.on{
 	display: block;
 }
+
+/* Tooltip */
+.tooltip{
+	width: 0;
+	height: 0;
+	border: 60px solid;
+	border-top-color: lightskyblue;
+	border-right-color: lightcoral;
+	border-bottom-color: lightsalmon;
+	border-left-color: lightseagreen;
+	transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	-ms-transform: rotate(-40deg);
+	-o-transform: rotate(-40deg);
+}
+
+/* 
+https://pattle.github.io/simpsons-in-css/
+https://css-tricks.com/the-shapes-of-css/
+http://www.menucool.com/tooltip/css-tooltip
+http://www.cssarrowplease.com/
+ */
